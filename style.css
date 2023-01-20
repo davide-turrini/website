@@ -1,0 +1,156 @@
+html,
+body {
+    background-color: #333;
+    font-family: Montserrat, sans-serif;
+    color: #bbb;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: repeating-linear-gradient(-135deg, #1b2e3d, #56666c);
+}
+
+h1,h2,h3,h4,h5,h6,p,pre,span {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: inset 0 0 0 #bbb;
+    color: #bbb;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+li a {
+    margin-right: 2px;
+}
+
+a:hover {
+    box-shadow: inset 500px 0 0 0 #bbb;
+    color: #333;
+}
+
+header {
+    padding: 72px 8px 0 8px;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #888;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    word-spacing: 40px;
+}
+
+h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ccc;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+}
+
+h4 {
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h5 {
+    font-weight: 200;
+    font-size:10px;
+    text-transform: uppercase;
+}
+
+ul {
+    margin-top: 16px;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 32px;
+}
+
+ul li {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+ul li span {
+    font-size: 12px;
+    color: #888;
+    font-weight: 200;
+}
+
+.result {
+    margin-top: 64px;
+}
+
+.cols {
+    display: flex;
+    margin-left: -16px;
+    margin-right: -16px;
+    flex-wrap: wrap;
+}
+
+.cols .col {
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .cols.md-2 .col{
+        width: 50%;
+    }
+
+    .cols.md-3 .col{
+        width: 33%;
+    }    
+}
+
+main {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+input {
+    background: inherit;
+    border: none;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    color: #666;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 40px;
+}
+
+#query {
+    font-weight: 100;
+}
+
+#results {
+    padding: 16px;
+}
